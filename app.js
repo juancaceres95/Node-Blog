@@ -5,10 +5,6 @@ const cors = require("cors");
 const helmet = require("helmet");
 
 // routes ----------------------------------------------------------------
-// const charcterRoutes = require("./routes/characterRoute");
-// // const movieRoutes = require("./routes/movieRoute");
-// // const genreRoutes = require("./routes/genreRoute");
-// const userRoutes = require("./routes/userRoute");
 
 // initialize app --------------------------------
 dotenv.config({ path: ".env" });
@@ -34,9 +30,6 @@ app.use("/", express.static("build"));
 
 // mounting the routes -----------------------------------------
 // app.use("/api/v1/characters", charcterRoutes);
-// app.use("/api/v1/movies", movieRoutes);
-// app.use("/api/v1/genres", genreRoutes);
-// app.use("/api/v1/users", userRoutes);
 
 // error handler --------------------------------
 app.all("*", (req, res, next) => {

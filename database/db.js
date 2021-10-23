@@ -1,5 +1,7 @@
 const { Sequelize } = require("sequelize");
 const dotenv = require("dotenv");
+// const Category = require("../models/Category");
+// const Posts = require("../models/Posts");
 dotenv.config({ path: ".env" });
 
 const db = new Sequelize(

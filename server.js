@@ -15,11 +15,7 @@ const testDatabaseConnection = async function () {
 testDatabaseConnection();
 
 // opening the server
-const PORT = process.env.PORT;
-
-// app.listen(PORT);
-
-// const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT
 
 app.listen(PORT, () => {
   console.log(`Server listening at port: ${PORT}`);
