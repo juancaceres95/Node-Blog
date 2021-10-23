@@ -5,6 +5,7 @@ const cors = require("cors");
 const helmet = require("helmet");
 
 // routes ----------------------------------------------------------------
+const postRoute = require("./routes/posts");
 
 // initialize app --------------------------------
 dotenv.config({ path: ".env" });
@@ -29,7 +30,7 @@ app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 app.use("/", express.static("build"));
 
 // mounting the routes -----------------------------------------
-// app.use("/api/v1/characters", charcterRoutes);
+// app.use("/post", postRoute);
 
 // error handler --------------------------------
 app.all("*", (req, res, next) => {
